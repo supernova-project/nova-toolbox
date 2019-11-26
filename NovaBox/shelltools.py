@@ -5,9 +5,8 @@ from os import getcwd
 
 
 
-def ls():
-    return listdir(pwd())
-
+def pwd():
+    return getcwd()
 
 def isdir(dirpath):
     return path.isdir(dirpath)
@@ -15,9 +14,8 @@ def isdir(dirpath):
 def isfile(filepath):
     return path.isfile(filepath)
 
-
-def pwd():
-    return getcwd()
+def ls():
+    return listdir(pwd())
 
 
 def mkdir(dir):
